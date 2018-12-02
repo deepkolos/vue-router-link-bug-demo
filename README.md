@@ -1,5 +1,9 @@
 # vue-router-link-bug-demo
 
+# gif
+
+![router-link-bug.gif](https://upload-images.jianshu.io/upload_images/252050-56ab6f579680300d.gif?imageMogr2/auto-orient/strip)
+
 ## Build Setup
 
 ``` bash
