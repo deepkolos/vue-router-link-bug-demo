@@ -1,8 +1,39 @@
 # vue-router-link-bug-demo
 
-# gif
-
 ![router-link-bug.gif](https://upload-images.jianshu.io/upload_images/252050-56ab6f579680300d.gif?imageMogr2/auto-orient/strip)
+
+App.vue
+```vue
+<template>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+  </div>
+</template>
+```
+
+f-link.vue
+```
+  name: 'f-link',
+  functional: true,
+
+  render(h, context) {
+    const staticClass = context.data ? context.data.staticClass || '' : '';
+
+    return h(
+      'router-link',
+      {
+        props: context.props,
+        attrs: {
+          class: `f-link ${staticClass}`
+        }
+      },
+      context.children
+    );
+  }
+```
 
 ## Build Setup
 
