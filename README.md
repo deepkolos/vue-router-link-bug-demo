@@ -1,5 +1,7 @@
 # vue-router-link-bug-demo
 
+router-link doesn't work correctly when rendered by functional component with keepAlive
+
 ![router-link-bug.gif](https://upload-images.jianshu.io/upload_images/252050-56ab6f579680300d.gif?imageMogr2/auto-orient/strip)
 
 App.vue
